@@ -72,7 +72,7 @@
                         </button>
 
                         <!-- Theme Toggle -->
-                        <button id="theme-toggle-desktop" class="js-theme-toggle hidden lg:flex w-10 h-10 items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-rose-500/50 hover:bg-white dark:hover:bg-gray-700 transition-all shadow-sm group" aria-label="Toggle theme">
+                        <button id="theme-toggle-desktop" class="js-theme-toggle hidden lg:flex w-12 h-10 items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-rose-500/50 hover:bg-white dark:hover:bg-gray-700 transition-all shadow-sm group" aria-label="Toggle theme">
                             <i class="fas fa-moon text-sm text-gray-600 dark:text-gray-400 group-hover:text-rose-600 transition-colors"></i>
                         </button>
 
@@ -97,13 +97,11 @@
                     </div>
                     <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
                         <div class="flex gap-3 w-full sm:w-auto">
-                            <button class="js-dir-toggle flex items-center space-x-2 px-6 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all flex-1 sm:flex-none justify-center">
-                                <i class="fas fa-exchange-alt text-sm"></i>
-                                <span class="text-xs font-bold uppercase tracking-widest">LTR / RTL</span>
+                            <button class="js-dir-toggle flex items-center justify-center w-12 h-10 rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-rose-500/50 hover:bg-white dark:hover:bg-gray-700 transition-all shadow-sm group flex-1 sm:flex-none" aria-label="Toggle text direction">
+                                <span class="text-[10px] font-black text-gray-600 dark:text-gray-400 group-hover:text-rose-600 transition-colors uppercase">LTR</span>
                             </button>
-                            <button class="js-theme-toggle flex items-center space-x-2 px-6 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all flex-1 sm:flex-none justify-center">
-                                <i class="fas fa-moon text-sm"></i>
-                                <span class="text-xs font-bold uppercase tracking-widest">Theme</span>
+                            <button class="js-theme-toggle flex items-center justify-center w-12 h-10 rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-rose-500/50 hover:bg-white dark:hover:bg-gray-700 transition-all shadow-sm group flex-1 sm:flex-none" aria-label="Toggle theme">
+                                <i class="fas fa-moon text-sm text-gray-600 dark:text-gray-400 group-hover:text-rose-600 transition-colors"></i>
                             </button>
                         </div>
                         <div class="flex w-full sm:w-auto">
@@ -246,7 +244,10 @@
                 html.classList.add('dark');
                 themeBtns.forEach(btn => {
                     const icon = btn.querySelector('i');
-                    if (icon) icon.className = 'fas fa-sun text-sm text-yellow-400';
+                    if (icon) {
+                        icon.classList.remove('fa-moon', 'text-gray-600', 'dark:text-gray-400');
+                        icon.classList.add('fa-sun', 'text-yellow-400');
+                    }
                     const span = btn.querySelector('span');
                     if (span) span.textContent = 'Light Mode';
                 });
@@ -255,7 +256,10 @@
                 html.classList.remove('dark');
                 themeBtns.forEach(btn => {
                     const icon = btn.querySelector('i');
-                    if (icon) icon.className = 'fas fa-moon text-sm text-gray-600 dark:text-gray-400';
+                    if (icon) {
+                        icon.classList.remove('fa-sun', 'text-yellow-400');
+                        icon.classList.add('fa-moon', 'text-gray-600', 'dark:text-gray-400');
+                    }
                     const span = btn.querySelector('span');
                     if (span) span.textContent = 'Dark Mode';
                 });

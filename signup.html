@@ -17,26 +17,27 @@
 <div class="fixed inset-0 z-0 bg-cover bg-center filter blur-[6px] scale-105" style="background-image: url('assets/family-happy.png');"></div>
 <div class="fixed inset-0 z-0 bg-gray-950/60 dark:bg-gray-950/80 transition-colors duration-500"></div>
 
+<!-- RTL & Theme Toggles (Floating page top-right) -->
+<div class="fixed top-4 right-4 sm:top-6 sm:right-6 z-50 flex items-center gap-1.5">
+    <button class="js-dir-toggle w-8 h-8 flex items-center justify-center rounded-xl bg-gray-100/50 hover:bg-gray-100 dark:bg-gray-800/50 dark:hover:bg-gray-800 border border-gray-200/20 dark:border-gray-700/50 text-gray-800 dark:text-white transition-all text-[8px] font-black uppercase" aria-label="Toggle text direction">
+        <span>LTR</span>
+    </button>
+    <button class="js-theme-toggle w-8 h-8 flex items-center justify-center rounded-xl bg-gray-100/50 hover:bg-gray-100 dark:bg-gray-800/50 dark:hover:bg-gray-800 border border-gray-200/20 dark:border-gray-700/50 text-gray-800 dark:text-white transition-all" aria-label="Toggle theme">
+        <i class="fas fa-moon text-[10px]"></i>
+    </button>
+</div>
+
 <!-- Signup Container -->
 <div class="relative z-10 w-full max-w-md my-8">
     <div class="glass relative overflow-hidden rounded-[2.5rem] p-8 md:p-10 shadow-2xl bg-white/80 dark:bg-gray-950/80 border border-rose-100/20 dark:border-gray-800/80 transition-all duration-300">
         
-        <!-- Card Header (Logo & Toggles) -->
-        <div class="flex items-center justify-between mb-8">
+        <div class="flex justify-center mb-8">
             <a href="index.html" class="flex items-center space-x-2.5 group">
                 <img src="assets/logo.png" alt="TenderCare Logo" class="h-8 w-8 object-contain rounded-lg shadow-sm border border-gray-150/10 dark:border-gray-800/10 transition-transform group-hover:scale-105 duration-350">
                 <span class="font-black text-xl tracking-tight text-rose-700 dark:text-rose-500 group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors" style="font-family: 'DM Serif Display', serif;">
                     TenderCare
                 </span>
             </a>
-            <div class="flex items-center gap-1.5">
-                <button class="js-dir-toggle w-8 h-8 flex items-center justify-center rounded-xl bg-gray-100/50 hover:bg-gray-100 dark:bg-gray-800/50 dark:hover:bg-gray-800 border border-gray-200/20 dark:border-gray-700/50 text-gray-800 dark:text-white transition-all text-[8px] font-black uppercase" aria-label="Toggle text direction">
-                    <span>LTR</span>
-                </button>
-                <button class="js-theme-toggle w-8 h-8 flex items-center justify-center rounded-xl bg-gray-100/50 hover:bg-gray-100 dark:bg-gray-800/50 dark:hover:bg-gray-800 border border-gray-200/20 dark:border-gray-700/50 text-gray-800 dark:text-white transition-all" aria-label="Toggle theme">
-                    <i class="fas fa-moon text-[10px]"></i>
-                </button>
-            </div>
         </div>
 
         <!-- Form -->
