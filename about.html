@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" id="root-html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about TenderCare's mission to connect families with trusted, vetted caregivers. Our story, team, values, and commitment to safe childcare.">
+    <title>About Us | TenderCare</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="tailwind-config.js"></script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300 font-body">
+
+<div id="navbar-container"></div>
+
+<!-- ===== HERO BANNER (Redesigned with Premium Filter Overlay) ===== -->
+<section class="relative py-36 md:py-48 bg-gray-950 overflow-hidden flex items-center justify-center">
+    <!-- Glow Overlay rings -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-rose-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="absolute inset-0 z-0">
+        <img src="assets/about-team.png" alt="TenderCare team" class="w-full h-full object-cover opacity-35 scale-105 animate-slow-zoom">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/50 to-black/90"></div>
+    </div>
+    
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-6">
+        <div class="opacity-0 animate-fade-in-down inline-flex items-center space-x-2 bg-rose-500/10 border border-rose-500/20 px-5 py-2.5 rounded-full backdrop-blur-md">
+            <span class="text-rose-450 text-[10px] font-black uppercase tracking-[0.3em]">Our Story & Purpose</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter animate-fade-in-up font-display leading-[0.95]" style="font-family: 'DM Serif Display', serif;">
+            Building <span class="text-rose-400">Trust</span>,<br>One Family at a Time
+        </h1>
+        <p class="text-gray-300 text-sm md:text-lg max-w-2xl mx-auto animate-fade-in-up animation-delay-200 font-medium leading-relaxed">
+            Since 2015, we've been on a mission to make quality childcare accessible, safe, and stress-free for every family.
+        </p>
+    </div>
+</section>
+
+<!-- ===== MISSION & VISION (Redesigned with Glass Cards) ===== -->
+<section class="py-28 bg-white dark:bg-gray-950 transition-colors duration-300 relative">
+    <div class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] dark:bg-[radial-gradient(#334155_1px,transparent_1px)] opacity-30 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+            <!-- Mission Card -->
+            <div class="premium-card rounded-3xl p-10 hover:-translate-y-1 transition-all duration-300 neon-glow-card border border-rose-100/50 dark:border-gray-800/80 flex flex-col justify-between text-left">
+                <div class="space-y-6">
+                    <div class="w-14 h-14 rounded-2xl bg-rose-50 dark:bg-rose-950/40 flex items-center justify-center">
+                        <i class="fas fa-bullseye text-2xl text-rose-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-black dark:text-white font-display">Our Mission</h3>
+                    <p class="text-gray-500 dark:text-gray-400 leading-relaxed font-medium text-sm">
+                        To bridge the gap between families and exceptional caregivers through rigorous vetting, smart matching, and unwavering support. We believe every child deserves loving and every parent deserves peace of mind.
+                    </p>
+                </div>
+                <div class="pt-6 text-xs font-black text-rose-600 uppercase tracking-widest font-mono">
+                    Vetted Care First
+                </div>
+            </div>
+
+            <!-- Vision Card -->
+            <div class="premium-card rounded-3xl p-10 hover:-translate-y-1 transition-all duration-300 neon-glow-card border border-indigo-100/50 dark:border-gray-800/80 flex flex-col justify-between text-left">
+                <div class="space-y-6">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-50 dark:bg-indigo-950/40 flex items-center justify-center">
+                        <i class="fas fa-eye text-2xl text-indigo-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-black dark:text-white font-display">Our Vision</h3>
+                    <p class="text-gray-500 dark:text-gray-400 leading-relaxed font-medium text-sm">
+                        A world where finding trusted childcare is effortless and transparent. We envision a future where every family has instant access to verified, compassionate caregivers who become an extension of the family unit.
+                    </p>
+                </div>
+                <div class="pt-6 text-xs font-black text-indigo-650 uppercase tracking-widest font-mono">
+                    A Better Future for Kids
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== JOURNEY TIMELINE (Polished Interactive Stepper) ===== -->
+<section class="py-28 bg-gray-55/30 dark:bg-gray-900/50 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto reveal mb-16">
+            <h3 class="text-rose-600 font-black uppercase tracking-[0.3em] text-xs mb-4">Milestones</h3>
+            <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white leading-tight tracking-tighter font-display">
+                Our <span class="text-rose-600">Journey</span>
+            </h2>
+            <p class="text-gray-500 dark:text-gray-400 mt-4 font-medium">Tracing our steps from a small local matchmaker to a trusted national safety framework.</p>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto reveal mt-16">
+            <div class="timeline-line hidden md:block"></div>
+            
+            <div class="space-y-16">
+                <!-- Node 1 -->
+                <div class="flex flex-col md:flex-row items-center gap-8 relative">
+                    <div class="md:w-1/2 md:text-right md:pr-12 text-left space-y-2">
+                        <span class="text-xs font-black text-rose-600 dark:text-rose-450 uppercase tracking-widest font-mono">2015 • The Beginning</span>
+                        <h4 class="font-bold text-2xl dark:text-white font-display">TenderCare is Founded</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed font-medium">
+                            Created by parents frustrated with existing placement procedures. We launched with only 10 vetted nannies in Boston.
+                        </p>
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-rose-600 text-white flex items-center justify-center font-black text-sm shadow-xl flex-shrink-0 z-10 border-4 border-white dark:border-gray-950 font-display">01</div>
+                    <div class="md:w-1/2 md:pl-12"></div>
+                </div>
+
+                <!-- Node 2 -->
+                <div class="flex flex-col md:flex-row items-center gap-8 relative">
+                    <div class="md:w-1/2 md:text-right md:pr-12 md:order-1"></div>
+                    <div class="w-12 h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-black text-sm shadow-xl flex-shrink-0 z-10 border-4 border-white dark:border-gray-950 md:order-2 font-display">02</div>
+                    <div class="md:w-1/2 md:pl-12 md:order-3 text-left space-y-2">
+                        <span class="text-xs font-black text-indigo-600 dark:text-indigo-455 uppercase tracking-widest font-mono">2018 • Going Digital</span>
+                        <h4 class="font-bold text-2xl dark:text-white font-display">Proprietary Matching Platform</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed font-medium">
+                            We launched our digital matching algorithm to consider parental values, educational backgrounds, and infant milestones.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Node 3 -->
+                <div class="flex flex-col md:flex-row items-center gap-8 relative">
+                    <div class="md:w-1/2 md:text-right md:pr-12 text-left space-y-2">
+                        <span class="text-xs font-black text-amber-600 dark:text-amber-450 uppercase tracking-widest font-mono">2021 • Expanding Safety</span>
+                        <h4 class="font-bold text-2xl dark:text-white font-display">Vetting System Upgrades</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-450 leading-relaxed font-medium">
+                            Partnered with federal data systems to establish daily background checks and active driving profile monitoring.
+                        </p>
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center font-black text-sm shadow-xl flex-shrink-0 z-10 border-4 border-white dark:border-gray-950 font-display">03</div>
+                    <div class="md:w-1/2 md:pl-12"></div>
+                </div>
+
+                <!-- Node 4 -->
+                <div class="flex flex-col md:flex-row items-center gap-8 relative">
+                    <div class="md:w-1/2 md:text-right md:pr-12 md:order-1"></div>
+                    <div class="w-12 h-12 rounded-full bg-rose-600 text-white flex items-center justify-center font-black text-sm shadow-xl flex-shrink-0 z-10 border-4 border-white dark:border-gray-950 md:order-2 font-display">04</div>
+                    <div class="md:w-1/2 md:pl-12 md:order-3 text-left space-y-2">
+                        <span class="text-xs font-black text-rose-600 dark:text-rose-455 uppercase tracking-widest font-mono">2026 • Today</span>
+                        <h4 class="font-bold text-2xl dark:text-white font-display">2.5K+ Happy Families Served</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed font-medium">
+                            Operating in 50+ major cities with a verified list of 5,000+ caregivers, maintaining a 98% parent retention rate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== VALUES (Redesigned Core Values Grid) ===== -->
+<section class="py-28 bg-white dark:bg-gray-950 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto reveal mb-16">
+            <h3 class="text-rose-600 font-black uppercase tracking-[0.3em] text-xs mb-4">Values</h3>
+            <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white leading-tight tracking-tighter font-display">
+                Our Core <span class="text-rose-600">Beliefs</span>
+            </h2>
+            <p class="text-gray-500 dark:text-gray-400 mt-4 font-medium">How we execute care daily across our matching structures.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+            <div class="premium-card text-center p-8 rounded-3xl hover:-translate-y-2 transition-all duration-300 neon-glow-card flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-rose-50 dark:bg-rose-950/40 flex items-center justify-center"><i class="fas fa-shield-alt text-2xl text-rose-600"></i></div>
+                    <h4 class="font-bold text-lg dark:text-white font-display">Trust</h4>
+                    <p class="text-xs text-gray-550 dark:text-gray-400 font-medium">Every caregiver is thoroughly vetted so families can trust without hesitation for professional care.</p>
+                </div>
+            </div>
+            <div class="premium-card text-center p-8 rounded-3xl hover:-translate-y-2 transition-all duration-300 neon-glow-card flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-rose-50 dark:bg-rose-950/40 flex items-center justify-center"><i class="fas fa-lock text-2xl text-rose-500"></i></div>
+                    <h4 class="font-bold text-lg dark:text-white font-display">Safety</h4>
+                    <p class="text-xs text-gray-550 dark:text-gray-400 font-medium">Child safety is non-negotiable. Our rigorous processes ensure the highest standards.</p>
+                </div>
+            </div>
+            <div class="premium-card text-center p-8 rounded-3xl hover:-translate-y-2 transition-all duration-300 neon-glow-card flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-50 dark:bg-amber-950/40 flex items-center justify-center"><i class="fas fa-award text-2xl text-amber-500"></i></div>
+                    <h4 class="font-bold text-lg dark:text-white font-display">Excellence</h4>
+                    <p class="text-xs text-gray-550 dark:text-gray-400 font-medium">We accept only the top 5% of caregiver applicants who meet our exacting standards.</p>
+                </div>
+            </div>
+            <div class="premium-card text-center p-8 rounded-3xl hover:-translate-y-2 transition-all duration-300 neon-glow-card flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-pink-50 dark:bg-pink-950/40 flex items-center justify-center"><i class="fas fa-heart text-2xl text-pink-500"></i></div>
+                    <h4 class="font-bold text-lg dark:text-white font-display">Heart</h4>
+                    <p class="text-xs text-gray-550 dark:text-gray-400 font-medium">Genuine love for families drives everything we do, from first call to last day of care.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TEAM SHOWCASE (Leadership & Advisors Directory) ===== -->
+<section class="py-28 bg-gray-55/30 dark:bg-gray-900/50 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 space-y-16">
+        <div class="text-center max-w-2xl mx-auto reveal">
+            <h3 class="text-rose-600 font-black uppercase tracking-[0.3em] text-xs mb-4">Our Leadership</h3>
+            <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white leading-tight tracking-tighter font-display">
+                Meet the <span class="text-rose-600">Experts</span> Behind TenderCare
+            </h2>
+            <p class="text-gray-500 dark:text-gray-400 mt-4 font-medium">A dedicated team of child development specialists, safety auditors, and parents working together to support your family.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+            <!-- Member 1 -->
+            <div class="premium-card rounded-3xl p-6 text-center hover:-translate-y-2 transition-all duration-500 group neon-glow-card flex flex-col justify-between min-h-[350px]">
+                <div class="space-y-4">
+                    <div class="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg bg-rose-50 dark:bg-rose-950/80 flex items-center justify-center">
+                        <span class="text-3xl font-black text-rose-600 dark:text-rose-400 font-display">CV</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg dark:text-white">Clara Vance</h4>
+                        <p class="text-[9px] text-rose-600 dark:text-rose-400 font-black uppercase tracking-widest mt-1">Founder & CEO</p>
+                    </div>
+                    <p class="text-xs text-gray-550 dark:text-gray-400 leading-relaxed font-medium">
+                        Pediatric Nurse & mother of three. Clara founded TenderCare to bring medical-grade vetting standards to family care.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-gray-100 dark:border-gray-800/80 mt-6 flex justify-center gap-3 text-gray-400">
+                    <a href="#" class="hover:text-rose-600 transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="hover:text-rose-600 transition-colors"><i class="fab fa-twitter text-sm"></i></a>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="premium-card rounded-3xl p-6 text-center hover:-translate-y-2 transition-all duration-500 group neon-glow-card flex flex-col justify-between min-h-[350px]">
+                <div class="space-y-4">
+                    <div class="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg bg-indigo-50 dark:bg-indigo-950/80 flex items-center justify-center">
+                        <span class="text-3xl font-black text-indigo-600 dark:text-indigo-400 font-display">MS</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg dark:text-white">Marcus Sterling</h4>
+                        <p class="text-[9px] text-indigo-600 dark:text-indigo-400 font-black uppercase tracking-widest mt-1">Safety & Compliance</p>
+                    </div>
+                    <p class="text-xs text-gray-550 dark:text-gray-400 leading-relaxed font-medium">
+                        Former regulatory safety analyst. Marcus manages our database verification and compliance standards.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-gray-100 dark:border-gray-800/80 mt-6 flex justify-center gap-3 text-gray-400">
+                    <a href="#" class="hover:text-rose-600 transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="hover:text-rose-600 transition-colors"><i class="fab fa-twitter text-sm"></i></a>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="premium-card rounded-3xl p-6 text-center hover:-translate-y-2 transition-all duration-500 group neon-glow-card flex flex-col justify-between min-h-[350px]">
+                <div class="space-y-4">
+                    <div class="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg bg-amber-50 dark:bg-amber-950/80 flex items-center justify-center">
+                        <span class="text-3xl font-black text-amber-600 dark:text-amber-400 font-display">EC</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg dark:text-white">Dr. Evelyn Chen</h4>
+                        <p class="text-[9px] text-amber-600 dark:text-amber-400 font-black uppercase tracking-widest mt-1">Pediatric Advisor</p>
+                    </div>
+                    <p class="text-xs text-gray-555 dark:text-gray-400 leading-relaxed font-medium">
+                        MD & child development expert. Dr. Chen guides our educational matching criteria and support.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-gray-100 dark:border-gray-800/80 mt-6 flex justify-center gap-3 text-gray-400">
+                    <a href="#" class="hover:text-rose-600 transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="hover:text-rose-600 transition-colors"><i class="fab fa-twitter text-sm"></i></a>
+                </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="premium-card rounded-3xl p-6 text-center hover:-translate-y-2 transition-all duration-500 group neon-glow-card flex flex-col justify-between min-h-[350px]">
+                <div class="space-y-4">
+                    <div class="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg bg-pink-50 dark:bg-pink-950/80 flex items-center justify-center">
+                        <span class="text-3xl font-black text-pink-600 dark:text-pink-400 font-display">SM</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg dark:text-white">Sarah Mitchell</h4>
+                        <p class="text-[9px] text-pink-600 dark:text-pink-400 font-black uppercase tracking-widest mt-1">Care Liaison</p>
+                    </div>
+                    <p class="text-xs text-gray-555 dark:text-gray-400 leading-relaxed font-medium">
+                        Coordinator with 10+ years in infant care. Sarah manages active placement match alignments.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-gray-100 dark:border-gray-800/80 mt-6 flex justify-center gap-3 text-gray-400">
+                    <a href="#" class="hover:text-rose-600 transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="hover:text-rose-600 transition-colors"><i class="fab fa-twitter text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== STATS BAR (Redesigned with Trust Indicators) ===== -->
+<section class="py-20 bg-gradient-to-r from-rose-600 to-rose-700 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 reveal">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+            <div class="relative after:hidden md:after:block after:absolute after:top-2 after:right-0 after:h-12 after:w-px after:bg-white/20">
+                <h3 class="text-3xl md:text-5xl font-black mb-2 font-display">2,500+</h3>
+                <p class="text-rose-100 text-xs uppercase tracking-widest font-bold">Families Served</p>
+            </div>
+            <div class="relative after:hidden md:after:block after:absolute after:top-2 after:right-0 after:h-12 after:w-px after:bg-white/20">
+                <h3 class="text-3xl md:text-5xl font-black mb-2 font-display">5,000+</h3>
+                <p class="text-rose-100 text-xs uppercase tracking-widest font-bold">Vetted Caregivers</p>
+            </div>
+            <div class="relative after:hidden md:after:block after:absolute after:top-2 after:right-0 after:h-12 after:w-px after:bg-white/20">
+                <h3 class="text-3xl md:text-5xl font-black mb-2 font-display">50+</h3>
+                <p class="text-rose-100 text-xs uppercase tracking-widest font-bold">Cities Covered</p>
+            </div>
+            <div>
+                <h3 class="text-3xl md:text-5xl font-black mb-2 font-display">98%</h3>
+                <p class="text-rose-100 text-xs uppercase tracking-widest font-bold">Satisfaction Rate</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA (Redesigned) ===== -->
+<section class="py-24 bg-white dark:bg-gray-950 transition-colors duration-500">
+    <div class="max-w-7xl mx-auto px-4 reveal">
+        <div class="relative overflow-hidden rounded-[2.5rem] md:rounded-[3rem] bg-rose-50 dark:bg-gray-900 border border-rose-100 dark:border-gray-800 p-8 md:p-20 shadow-xl text-center">
+            
+            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-rose-500/5 dark:bg-rose-500/10 rounded-full blur-[100px] animate-pulse"></div>
+            <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-rose-200/60 dark:bg-rose-800/20 rounded-full blur-[80px]"></div>
+
+            <div class="relative z-10 flex flex-col items-center">
+                <h2 class="text-3xl md:text-5xl font-black dark:text-white tracking-tighter mb-6 font-display">
+                    Ready to Join Our <span class="text-rose-600 underline decoration-rose-200 dark:decoration-gray-700">Family</span>?
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 text-sm md:text-lg mb-10 max-w-2xl font-medium leading-relaxed">
+                    Whether you're a family looking for elite care or a background-checked caregiver seeking matching placements, we'd love to connect.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
+                    <a href="services.html" class="w-full sm:w-auto">
+                        <button class="btn-primary w-full sm:w-56 py-4">Find a Caregiver</button>
+                    </a>
+                    <a href="contact.html" class="w-full sm:w-auto">
+                        <button class="btn-secondary w-full sm:w-56 py-4">Contact Us</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="footer-container"></div>
+
+<script src="components.js"></script>
+</body>
+</html>

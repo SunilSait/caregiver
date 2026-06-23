@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" id="root-html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - TenderCare">
+    <title>404 - Page Not Found | TenderCare</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="tailwind-config.js"></script>
+    <style>
+        @keyframes gentle-sway { 0%,100%{transform:rotate(0deg) scale(1);} 25%{transform:rotate(-5deg) scale(1.05);} 50%{transform:rotate(5deg) scale(1);} 75%{transform:rotate(-3deg) scale(1.02);} }
+        .sway:hover { animation: gentle-sway 0.5s ease-in-out; }
+    </style>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300 font-body min-h-screen flex flex-col">
+
+<!-- RTL & Theme Toggles -->
+<div class="fixed top-6 right-6 z-50 flex items-center gap-2">
+    <button class="js-dir-toggle w-9 h-9 flex items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-rose-600 transition-all text-[9px] font-black uppercase" aria-label="Toggle text direction"><span>LTR</span></button>
+    <button class="js-theme-toggle w-9 h-9 flex items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-rose-600 transition-all" aria-label="Toggle theme"><i class="fas fa-moon text-xs"></i></button>
+</div>
+
+<section class="flex-1 flex items-center justify-center py-20 bg-white dark:bg-gray-900 transition-colors duration-300 relative overflow-hidden">
+    <!-- Background Decoration -->
+    <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-rose-500/5 dark:bg-rose-500/10 rounded-full blur-[100px]"></div>
+    <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-rose-200/30 dark:bg-rose-800/10 rounded-full blur-[80px]"></div>
+    
+    <!-- Floating elements -->
+    <div class="absolute top-1/4 left-1/4 text-2xl opacity-20 animate-float">💖</div>
+    <div class="absolute top-1/3 right-1/3 text-xl opacity-15 animate-float animation-delay-400">⭐</div>
+    <div class="absolute bottom-1/3 left-1/3 text-lg opacity-20 animate-float animation-delay-800">💕</div>
+
+    <div class="relative z-10 text-center px-4 max-w-2xl mx-auto">
+        <!-- Logo Icon -->
+        <a href="index.html" class="mb-8 sway cursor-pointer inline-block group">
+            <img src="assets/logo.png" alt="TenderCare Logo" class="h-32 w-32 md:h-40 md:w-40 object-contain rounded-3xl shadow-xl border border-gray-150/10 dark:border-gray-800/10 animate-float group-hover:scale-105 transition-transform duration-500">
+        </a>
+
+        <!-- 404 -->
+        <h1 class="text-7xl md:text-9xl font-black text-rose-600 mb-4 tracking-tighter" style="font-family: 'DM Serif Display', serif;">404</h1>
+
+        <!-- Message -->
+        <h2 class="text-2xl md:text-4xl font-black text-gray-900 dark:text-white mb-4 tracking-tight" style="font-family: 'DM Serif Display', serif;">
+            Oops! Page <span class="text-rose-600">Not Found</span>
+        </h2>
+
+        <p class="text-gray-500 dark:text-gray-400 text-sm md:text-lg max-w-md mx-auto mb-10 leading-relaxed">
+            It seems this page wandered off! Don't worry — our caregivers are great at finding things. Let's get you back on track.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="index.html">
+                <button class="group w-full sm:w-auto bg-rose-600 hover:bg-rose-700 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm transition-all active:scale-95 shadow-lg shadow-rose-600/20 btn-shine">
+                    <span class="flex items-center justify-center"><i class="fas fa-home mr-3"></i> Back to Home</span>
+                </button>
+            </a>
+            <a href="services.html">
+                <button class="w-full sm:w-auto bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm transition-all active:scale-95 border border-gray-200 dark:border-gray-700">
+                    <span class="flex items-center justify-center"><i class="fas fa-search mr-3"></i> Browse Caregivers</span>
+                </button>
+            </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="mt-16 pt-8 border-t border-gray-100 dark:border-gray-800">
+            <p class="text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">Or try these pages:</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="about.html" class="px-4 py-2 rounded-full bg-gray-50 dark:bg-gray-800 text-sm text-gray-600 dark:text-gray-300 hover:bg-rose-50 dark:hover:bg-rose-900/20 hover:text-rose-600 transition-all border border-gray-100 dark:border-gray-700">About Us</a>
+                <a href="pricing.html" class="px-4 py-2 rounded-full bg-gray-50 dark:bg-gray-800 text-sm text-gray-600 dark:text-gray-300 hover:bg-rose-50 dark:hover:bg-rose-900/20 hover:text-rose-600 transition-all border border-gray-100 dark:border-gray-700">Pricing</a>
+                <a href="contact.html" class="px-4 py-2 rounded-full bg-gray-50 dark:bg-gray-800 text-sm text-gray-600 dark:text-gray-300 hover:bg-rose-50 dark:hover:bg-rose-900/20 hover:text-rose-600 transition-all border border-gray-100 dark:border-gray-700">Contact</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="components.js"></script>
+</body>
+</html>
+
