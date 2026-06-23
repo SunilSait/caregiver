@@ -15,11 +15,26 @@
 <div id="navbar-container"></div>
 
 <!-- Hero -->
-<section class="py-24 md:py-32 bg-white dark:bg-gray-900 transition-colors">
-    <div class="max-w-4xl mx-auto text-center px-4">
-        <h3 class="text-rose-600 font-black uppercase tracking-[0.4em] text-xs mb-4 animate-fade-in-down">Pricing</h3>
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 dark:text-white tracking-tighter mb-6 animate-fade-in-up" style="font-family:'DM Serif Display',serif;">Simple, <span class="text-rose-600">Transparent</span> Plans</h1>
-        <p class="text-gray-500 dark:text-gray-400 text-lg max-w-2xl mx-auto animate-fade-in-up animation-delay-200">Choose the plan that fits your family. No hidden fees, cancel anytime.</p>
+<section class="relative py-32 md:py-40 bg-gray-950 overflow-hidden flex items-center justify-center">
+    <!-- Glow Overlay rings -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-rose-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="absolute inset-0 z-0">
+        <img src="assets/pricing-bg.png" alt="Pricing background" class="w-full h-full object-cover opacity-30 scale-105">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/50 to-black/90"></div>
+    </div>
+
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-6">
+        <div class="opacity-0 animate-fade-in-down inline-flex items-center space-x-2 bg-rose-500/10 border border-rose-500/20 px-5 py-2.5 rounded-full backdrop-blur-md">
+            <span class="text-rose-400 text-[10px] font-black uppercase tracking-[0.3em]">Pricing Plans</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter animate-fade-in-up font-display leading-[0.95]" style="font-family: 'DM Serif Display', serif;">
+            Simple, <span class="text-rose-400">Transparent</span> Plans
+        </h1>
+        <p class="text-gray-300 text-sm md:text-lg max-w-2xl mx-auto animate-fade-in-up animation-delay-200 font-medium leading-relaxed">
+            Choose the plan that fits your family. No hidden fees, cancel anytime.
+        </p>
     </div>
 </section>
 
@@ -37,7 +52,7 @@
                 <ul class="space-y-4 mb-10 text-sm text-gray-600 dark:text-gray-300 flex-1">
                     <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Browse caregiver profiles</li>
                     <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> 3 matches per month</li>
-                    <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Basic background </li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Basic background checks</li>
                     <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Email support (48hr response)</li>
                     <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Family dashboard </li>
                     <li class="flex items-center gap-3 text-gray-300 dark:text-gray-600"><i class="fas fa-times w-5 text-center"></i> Trial visit guarantee</li>
@@ -58,7 +73,7 @@
                 <ul class="space-y-4 mb-10 text-sm text-gray-600 dark:text-gray-300 flex-1">
                     <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Everything in Basic</li>
                     <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Unlimited matches</li>
-                    <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Enhanced background </li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Enhanced background checks</li>
                     <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Trial visit guarantee</li>
                     <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Priority support (4hr response)</li>
                     <li class="flex items-center gap-3"><i class="fas fa-check w-5 text-center text-rose-500"></i> Replacement guarantee</li>

@@ -43,7 +43,7 @@
         const navLinksMobile = NAV_LINKS.map(link => {
             const isActive = link.href === currentPage;
             return `<a href="${link.href}" class="nav-link flex items-center px-4 py-4 text-base font-bold border-b border-gray-50 dark:border-gray-800 hover:text-rose-600 transition-all duration-300 ${isActive ? 'text-rose-600 bg-rose-50 dark:bg-rose-900/10' : 'text-gray-700 dark:text-gray-200'}">
-                <i class="fas ${link.icon} w-6 text-sm opacity-50"></i> ${link.label}
+                ${link.label}
             </a>`;
         }).join('');
 
@@ -90,7 +90,7 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 transition-all duration-300">
+            <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 w-full bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 transition-all duration-300 shadow-xl z-50">
                 <div class="max-w-7xl mx-auto px-4 pt-4 pb-8">
                     <div class="grid grid-cols-1 gap-1 mb-6">
                         ${navLinksMobile}

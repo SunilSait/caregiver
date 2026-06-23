@@ -20,8 +20,15 @@
         <span class="font-black text-xl tracking-tight text-rose-700 dark:text-rose-500 group-hover:text-rose-600 transition-colors" style="font-family: 'DM Serif Display', serif;">TenderCare</span>
     </a>
     <div class="flex items-center gap-1.5">
-        <button class="js-dir-toggle w-8 h-8 flex items-center justify-center rounded-xl bg-gray-100/50 hover:bg-gray-100 dark:bg-gray-800/50 dark:hover:bg-gray-800 border border-gray-200/20 dark:border-gray-700/50 text-gray-800 dark:text-white transition-all text-[8px] font-black uppercase" aria-label="Toggle text direction"><span>LTR</span></button>
-        <button class="js-theme-toggle w-8 h-8 flex items-center justify-center rounded-xl bg-gray-100/50 hover:bg-gray-100 dark:bg-gray-800/50 dark:hover:bg-gray-800 border border-gray-200/20 dark:border-gray-700/50 text-gray-800 dark:text-white transition-all" aria-label="Toggle theme"><i class="fas fa-moon text-[10px]"></i></button>
+        <!-- RTL/LTR Toggle -->
+        <button class="js-dir-toggle w-12 h-10 flex items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-rose-500/50 hover:bg-white dark:hover:bg-gray-700 transition-all shadow-sm group" aria-label="Toggle text direction">
+            <span class="text-[10px] font-black text-gray-600 dark:text-gray-400 group-hover:text-rose-600 transition-colors uppercase">LTR</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="js-theme-toggle w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-rose-500/50 hover:bg-white dark:hover:bg-gray-700 transition-all shadow-sm group" aria-label="Toggle theme">
+            <i class="fas fa-moon text-sm text-gray-600 dark:text-gray-400 group-hover:text-rose-600 transition-colors"></i>
+        </button>
     </div>
 </header>
 
@@ -30,32 +37,43 @@
     <div class="absolute top-0 right-0 -mt-32 -mr-32 w-[500px] h-[500px] bg-rose-500/5 dark:bg-rose-500/10 rounded-full blur-[120px]"></div>
     <div class="absolute bottom-0 left-0 -mb-32 -ml-32 w-[400px] h-[400px] bg-rose-200/20 dark:bg-rose-800/10 rounded-full blur-[100px]"></div>
 
+    <!-- Related Banner Image -->
+    <div class="absolute inset-0 z-0 pointer-events-none">
+        <img src="assets/family-happy.png" alt="Family background" class="w-full h-full object-cover opacity-10 dark:opacity-20 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-white dark:from-gray-950/90 dark:via-gray-950/70 dark:to-gray-950"></div>
+    </div>
+
     <div class="relative z-10 text-center px-4 max-w-2xl mx-auto">
         <!-- Header spacer -->
         <div class="h-2"></div>
 
+        <!-- Logo Icon -->
+        <a href="index.html" class="mb-8 cursor-pointer inline-block group">
+            <img src="assets/logo.png" alt="TenderCare Logo" class="h-20 w-20 md:h-24 md:w-24 object-contain rounded-2xl shadow-lg border border-gray-150/10 dark:border-gray-800/10 transition-transform group-hover:scale-105 duration-350">
+        </a>
+
         <!-- Countdown Placeholder -->
-        <div class="flex justify-center gap-4 md:gap-8 mb-12">
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-4 md:p-6 min-w-[80px] border border-gray-100 dark:border-gray-700">
-                <span class="block text-3xl md:text-5xl font-black text-rose-600" id="days">14</span>
-                <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Days</span>
+        <div class="flex justify-center gap-2 sm:gap-4 md:gap-8 mb-12">
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-2.5 sm:p-4 md:p-6 w-16 sm:w-20 md:w-24 border border-gray-100 dark:border-gray-700 text-center flex flex-col items-center justify-center">
+                <span class="block text-2xl sm:text-3xl md:text-5xl font-black text-rose-600" id="days">14</span>
+                <span class="text-[8px] sm:text-[10px] text-gray-400 uppercase tracking-widest font-bold">Days</span>
             </div>
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-4 md:p-6 min-w-[80px] border border-gray-100 dark:border-gray-700">
-                <span class="block text-3xl md:text-5xl font-black text-rose-600" id="hours">08</span>
-                <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Hours</span>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-2.5 sm:p-4 md:p-6 w-16 sm:w-20 md:w-24 border border-gray-100 dark:border-gray-700 text-center flex flex-col items-center justify-center">
+                <span class="block text-2xl sm:text-3xl md:text-5xl font-black text-rose-600" id="hours">08</span>
+                <span class="text-[8px] sm:text-[10px] text-gray-400 uppercase tracking-widest font-bold">Hours</span>
             </div>
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-4 md:p-6 min-w-[80px] border border-gray-100 dark:border-gray-700">
-                <span class="block text-3xl md:text-5xl font-black text-rose-600" id="minutes">32</span>
-                <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Minutes</span>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-2.5 sm:p-4 md:p-6 w-16 sm:w-20 md:w-24 border border-gray-100 dark:border-gray-700 text-center flex flex-col items-center justify-center">
+                <span class="block text-2xl sm:text-3xl md:text-5xl font-black text-rose-600" id="minutes">32</span>
+                <span class="text-[8px] sm:text-[10px] text-gray-400 uppercase tracking-widest font-bold">Minutes</span>
             </div>
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-4 md:p-6 min-w-[80px] border border-gray-100 dark:border-gray-700">
-                <span class="block text-3xl md:text-5xl font-black text-rose-600 animate-pulse" id="seconds">45</span>
-                <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Seconds</span>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-2.5 sm:p-4 md:p-6 w-16 sm:w-20 md:w-24 border border-gray-100 dark:border-gray-700 text-center flex flex-col items-center justify-center">
+                <span class="block text-2xl sm:text-3xl md:text-5xl font-black text-rose-600 animate-pulse" id="seconds">45</span>
+                <span class="text-[8px] sm:text-[10px] text-gray-400 uppercase tracking-widest font-bold">Seconds</span>
             </div>
         </div>
 
         <!-- Heading -->
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 dark:text-white tracking-tighter mb-6" style="font-family: 'DM Serif Display', serif;">
+        <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 dark:text-white tracking-tighter mb-6" style="font-family: 'DM Serif Display', serif;">
             Something <span class="text-rose-600">Beautiful</span> is Coming
         </h1>
 
@@ -64,10 +82,10 @@
         </p>
 
         <!-- Newsletter -->
-        <form id="coming-soon-form" class="max-w-md mx-auto" onsubmit="handleNotify(event)">
-            <div class="flex gap-3">
-                <input type="email" required placeholder="Enter your email" class="flex-1 px-5 py-4 text-sm rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 focus:border-rose-600 focus:ring-1 focus:ring-rose-600 outline-none transition-all">
-                <button type="submit" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-4 rounded-xl font-black uppercase tracking-widest text-xs transition-all active:scale-95 shadow-lg shadow-rose-600/20 btn-shine whitespace-nowrap">
+        <form id="coming-soon-form" class="max-w-md mx-auto px-4 sm:px-0" onsubmit="handleNotify(event)">
+            <div class="flex flex-col sm:flex-row gap-3">
+                <input type="email" required placeholder="Enter your email" class="w-full sm:flex-1 px-5 py-4 text-sm rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 focus:border-rose-600 focus:ring-1 focus:ring-rose-600 outline-none transition-all">
+                <button type="submit" class="w-full sm:w-auto bg-rose-600 hover:bg-rose-700 text-white px-6 py-4 rounded-xl font-black uppercase tracking-widest text-xs transition-all active:scale-95 shadow-lg shadow-rose-600/20 btn-shine whitespace-nowrap">
                     Notify Me
                 </button>
             </div>

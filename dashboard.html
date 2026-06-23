@@ -100,10 +100,16 @@
         <div class="p-4 md:p-8">
             <!-- ===== OVERVIEW SECTION ===== -->
             <div id="section-overview" class="dashboard-section active">
-                <!-- Welcome -->
-                <div class="mb-8">
-                    <h1 class="text-2xl md:text-3xl font-black dark:text-white mb-2" style="font-family:'DM Serif Display',serif;">Welcome back, Sarah! 👋</h1>
-                    <p class="text-gray-500 dark:text-gray-400">Here's what's happening with your family's care today.</p>
+                <!-- Welcome Banner -->
+                <div class="relative overflow-hidden rounded-3xl p-6 md:p-8 mb-8 bg-gradient-to-r from-rose-500 to-indigo-650 text-white shadow-xl">
+                    <div class="absolute inset-0 z-0 pointer-events-none">
+                        <img src="assets/hero-bg.png" alt="Dashboard welcome background" class="w-full h-full object-cover opacity-20 scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-r from-rose-600/50 to-indigo-700/50"></div>
+                    </div>
+                    <div class="relative z-10">
+                        <h1 class="text-2xl md:text-4xl font-black mb-2 font-display" style="font-family:'DM Serif Display',serif;">Welcome back, Sarah! 👋</h1>
+                        <p class="text-rose-100 text-sm md:text-base max-w-xl">Here's what's happening with your family's care today. Everything is tracked, background checked, and ready.</p>
+                    </div>
                 </div>
 
                 <!-- Metrics -->
@@ -187,6 +193,104 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Weekly Schedule & Care Checklist -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                    <!-- Weekly Schedule -->
+                    <div class="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-bold text-lg dark:text-white">Weekly Schedule</h3>
+                            <span class="text-xs text-rose-500 font-bold bg-rose-50 dark:bg-rose-950/30 px-2 py-0.5 rounded-full uppercase">Jun 22 - Jun 28</span>
+                        </div>
+                        <div class="grid grid-cols-7 gap-2 text-center">
+                            <div class="p-2 rounded-xl bg-gray-50 dark:bg-gray-800/40">
+                                <span class="text-[10px] text-gray-400 font-bold block uppercase">Mon</span>
+                                <span class="text-xs dark:text-white font-bold block">22</span>
+                                <span class="w-1.5 h-1.5 bg-rose-500 rounded-full inline-block mt-1"></span>
+                            </div>
+                            <div class="p-2 rounded-xl bg-rose-500 text-white font-bold">
+                                <span class="text-[10px] opacity-80 block uppercase">Tue</span>
+                                <span class="text-xs block">23</span>
+                                <span class="text-[9px] block leading-none font-bold mt-1">9am</span>
+                            </div>
+                            <div class="p-2 rounded-xl bg-gray-50 dark:bg-gray-800/40">
+                                <span class="text-[10px] text-gray-400 font-bold block uppercase">Wed</span>
+                                <span class="text-xs dark:text-white font-bold block">24</span>
+                                <span class="w-1.5 h-1.5 bg-rose-500 rounded-full inline-block mt-1"></span>
+                            </div>
+                            <div class="p-2 rounded-xl bg-gray-50 dark:bg-gray-800/40">
+                                <span class="text-[10px] text-gray-400 font-bold block uppercase">Thu</span>
+                                <span class="text-xs dark:text-white font-bold block">25</span>
+                                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full inline-block mt-1"></span>
+                            </div>
+                            <div class="p-2 rounded-xl bg-gray-50 dark:bg-gray-800/40">
+                                <span class="text-[10px] text-gray-400 font-bold block uppercase">Fri</span>
+                                <span class="text-xs dark:text-white font-bold block">26</span>
+                                <span class="w-1.5 h-1.5 bg-rose-500 rounded-full inline-block mt-1"></span>
+                            </div>
+                            <div class="p-2 rounded-xl bg-gray-50 dark:bg-gray-800/40">
+                                <span class="text-[10px] text-gray-400 font-bold block uppercase">Sat</span>
+                                <span class="text-xs dark:text-white font-bold block">27</span>
+                                <span class="w-1.5 h-1.5 bg-gray-300 rounded-full inline-block mt-1"></span>
+                            </div>
+                            <div class="p-2 rounded-xl bg-gray-50 dark:bg-gray-800/40">
+                                <span class="text-[10px] text-gray-400 font-bold block uppercase">Sun</span>
+                                <span class="text-xs dark:text-white font-bold block">28</span>
+                                <span class="w-1.5 h-1.5 bg-gray-300 rounded-full inline-block mt-1"></span>
+                            </div>
+                        </div>
+                        <div class="mt-4 space-y-3">
+                            <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/20 rounded-xl">
+                                <div class="w-8 h-8 rounded-lg bg-rose-100 dark:bg-rose-955 flex items-center justify-center text-rose-600 font-bold text-xs">LR</div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-xs font-bold dark:text-white leading-none">Lisa Rodriguez — Full Day Visit</p>
+                                    <p class="text-[10px] text-gray-400 mt-1">Today • 9:00 AM - 5:00 PM</p>
+                                </div>
+                                <span class="text-[10px] font-bold text-green-500 bg-green-50 dark:bg-green-900/30 px-2 py-0.5 rounded-full uppercase">Active</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/20 rounded-xl">
+                                <div class="w-8 h-8 rounded-lg bg-indigo-100 dark:bg-indigo-955 flex items-center justify-center text-indigo-650 font-bold text-xs">SM</div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-xs font-bold dark:text-white leading-none">Sarah Mitchell — Trial Visit</p>
+                                    <p class="text-[10px] text-gray-400 mt-1">Thursday • 2:00 PM - 6:00 PM</p>
+                                </div>
+                                <span class="text-[10px] font-bold text-amber-500 bg-amber-50 dark:bg-amber-900/30 px-2 py-0.5 rounded-full uppercase">Pending</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Daily Care Checklist -->
+                    <div class="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-bold text-lg dark:text-white">Daily Care Tasks</h3>
+                                <span class="text-xs text-rose-500 font-bold bg-rose-50 dark:bg-rose-950/30 px-2.5 py-0.5 rounded-full" id="checklist-progress">1 / 4 Done</span>
+                            </div>
+                            <div class="space-y-3" id="checklist-container">
+                                <label class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/20 rounded-xl cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800/40 transition-colors">
+                                    <input type="checkbox" checked onchange="updateChecklistProgress()" class="w-4 h-4 text-rose-600 rounded focus:ring-rose-500">
+                                    <span class="text-xs font-medium dark:text-gray-200">Prepare healthy lunch & afternoon snacks</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-3 bg-gray-55 dark:bg-gray-800/20 rounded-xl cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800/40 transition-colors">
+                                    <input type="checkbox" onchange="updateChecklistProgress()" class="w-4 h-4 text-rose-600 rounded focus:ring-rose-500">
+                                    <span class="text-xs font-medium dark:text-gray-200">Supervise homework & math worksheet</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-3 bg-gray-55 dark:bg-gray-800/20 rounded-xl cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800/40 transition-colors">
+                                    <input type="checkbox" onchange="updateChecklistProgress()" class="w-4 h-4 text-rose-600 rounded focus:ring-rose-500">
+                                    <span class="text-xs font-medium dark:text-gray-200">Afternoon walk / park play (45 mins)</span>
+                                </label>
+                                <label class="flex items-center gap-3 p-3 bg-gray-55 dark:bg-gray-800/20 rounded-xl cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800/40 transition-colors">
+                                    <input type="checkbox" onchange="updateChecklistProgress()" class="w-4 h-4 text-rose-600 rounded focus:ring-rose-500">
+                                    <span class="text-xs font-medium dark:text-gray-200">Reading time before dinner</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex gap-2">
+                            <input type="text" id="new-task-input" placeholder="Add custom task..." class="flex-1 px-3 py-2 text-xs bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl outline-none focus:border-rose-600 transition-all dark:text-white">
+                            <button onclick="addChecklistTask()" class="bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold px-4 py-2 rounded-xl transition-all uppercase tracking-wider font-bold">Add</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- ===== BROWSE CAREGIVERS ===== -->
@@ -206,43 +310,43 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
                     <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all">
                         <div class="flex items-center gap-4 mb-4">
-                            <img src="assets/caregiver-sarah.png" alt="Sarah Mitchell" class="w-14 h-14 rounded-xl object-cover">
-                            <div class="flex-1"><h4 class="font-bold dark:text-white">Sarah Mitchell</h4><p class="text-[10px] text-gray-400">8 yrs exp • Full-Time</p></div>
+                            <img src="assets/caregiver-sarah.png" alt="Sarah Mitchell" class="w-14 h-14 rounded-xl object-cover cursor-pointer hover:scale-105 transition-transform" onclick="openProfileModal('Sarah Mitchell')">
+                            <div class="flex-1"><h4 class="font-bold dark:text-white cursor-pointer hover:text-rose-600 transition-colors" onclick="openProfileModal('Sarah Mitchell')">Sarah Mitchell</h4><p class="text-[10px] text-gray-400">8 yrs exp • Full-Time</p></div>
                             <span class="badge-verified text-[10px] font-bold px-2 py-1 rounded-full">✓ Verified</span>
                         </div>
                         <div class="flex items-center gap-1 mb-3"><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><span class="text-xs ml-1 font-bold text-gray-500">5.0</span></div>
                         <div class="flex flex-wrap gap-1 mb-4"><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">CPR</span><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">First Aid</span><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">Newborns</span></div>
-                        <button class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
+                        <button onclick="openProfileModal('Sarah Mitchell')" class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
                     </div>
                     <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all">
                         <div class="flex items-center gap-4 mb-4">
-                            <img src="assets/caregiver-emma.png" alt="Emma Johnson" class="w-14 h-14 rounded-xl object-cover">
-                            <div class="flex-1"><h4 class="font-bold dark:text-white">Emma Johnson</h4><p class="text-[10px] text-gray-400">5 yrs exp • Part-Time</p></div>
+                            <img src="assets/caregiver-emma.png" alt="Emma Johnson" class="w-14 h-14 rounded-xl object-cover cursor-pointer hover:scale-105 transition-transform" onclick="openProfileModal('Emma Johnson')">
+                            <div class="flex-1"><h4 class="font-bold dark:text-white cursor-pointer hover:text-rose-600 transition-colors" onclick="openProfileModal('Emma Johnson')">Emma Johnson</h4><p class="text-[10px] text-gray-400">5 yrs exp • Part-Time</p></div>
                             <span class="badge-verified text-[10px] font-bold px-2 py-1 rounded-full">✓ Verified</span>
                         </div>
                         <div class="flex items-center gap-1 mb-3"><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star-half-alt text-amber-400 text-xs"></i><span class="text-xs ml-1 font-bold text-gray-500">4.8</span></div>
                         <div class="flex flex-wrap gap-1 mb-4"><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">After-School</span><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">Arts</span></div>
-                        <button class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
+                        <button onclick="openProfileModal('Emma Johnson')" class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
                     </div>
                     <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all">
                         <div class="flex items-center gap-4 mb-4">
-                            <img src="assets/caregiver-lisa.png" alt="Lisa Rodriguez" class="w-14 h-14 rounded-xl object-cover">
-                            <div class="flex-1"><h4 class="font-bold dark:text-white">Lisa Rodriguez</h4><p class="text-[10px] text-gray-400">12 yrs exp • Specialist</p></div>
+                            <img src="assets/caregiver-lisa.png" alt="Lisa Rodriguez" class="w-14 h-14 rounded-xl object-cover cursor-pointer hover:scale-105 transition-transform" onclick="openProfileModal('Lisa Rodriguez')">
+                            <div class="flex-1"><h4 class="font-bold dark:text-white cursor-pointer hover:text-rose-600 transition-colors" onclick="openProfileModal('Lisa Rodriguez')">Lisa Rodriguez</h4><p class="text-[10px] text-gray-400">12 yrs exp • Specialist</p></div>
                             <span class="badge-verified text-[10px] font-bold px-2 py-1 rounded-full">✓ Verified</span>
                         </div>
                         <div class="flex items-center gap-1 mb-3"><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><span class="text-xs ml-1 font-bold text-gray-500">4.9</span></div>
                         <div class="flex flex-wrap gap-1 mb-4"><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">Newborns</span><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">Bilingual</span><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">Sleep</span></div>
-                        <button class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
+                        <button onclick="openProfileModal('Lisa Rodriguez')" class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
                     </div>
                     <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all">
                         <div class="flex items-center gap-4 mb-4">
-                            <img src="assets/caregiver-profile.png" alt="Maria Chen" class="w-14 h-14 rounded-xl object-cover">
-                            <div class="flex-1"><h4 class="font-bold dark:text-white">Maria Chen</h4><p class="text-[10px] text-gray-400">7 yrs exp • Full-Time</p></div>
+                            <img src="assets/caregiver-profile.png" alt="Maria Chen" class="w-14 h-14 rounded-xl object-cover cursor-pointer hover:scale-105 transition-transform" onclick="openProfileModal('Maria Chen')">
+                            <div class="flex-1"><h4 class="font-bold dark:text-white cursor-pointer hover:text-rose-600 transition-colors" onclick="openProfileModal('Maria Chen')">Maria Chen</h4><p class="text-[10px] text-gray-400">7 yrs exp • Full-Time</p></div>
                             <span class="badge-verified text-[10px] font-bold px-2 py-1 rounded-full">✓ Verified</span>
                         </div>
                         <div class="flex items-center gap-1 mb-3"><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><span class="text-xs ml-1 font-bold text-gray-500">5.0</span></div>
                         <div class="flex flex-wrap gap-1 mb-4"><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">Toddlers</span><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">Cooking</span><span class="text-[10px] bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">Music</span></div>
-                        <button class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
+                        <button onclick="openProfileModal('Maria Chen')" class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
                     </div>
                 </div>
             </div>
@@ -250,6 +354,50 @@
             <!-- ===== MY BOOKINGS ===== -->
             <div id="section-bookings" class="dashboard-section">
                 <div class="mb-6"><h1 class="text-2xl font-black dark:text-white mb-2">My Bookings</h1><p class="text-sm text-gray-500 dark:text-gray-400">Manage your caregiver bookings and upcoming visits.</p></div>
+                
+                <!-- Book a Visit Action -->
+                <div class="mb-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden p-6">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleBookingForm()">
+                        <div>
+                            <h3 class="font-bold text-lg dark:text-white flex items-center gap-2"><i class="fas fa-calendar-plus text-rose-500"></i> Book a New Care Visit</h3>
+                            <p class="text-xs text-gray-400 mt-1">Schedule a vetted caregiver for full-day, trial, or specialized hours.</p>
+                        </div>
+                        <button class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300 transition-transform duration-300" id="booking-form-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <form id="booking-form" class="hidden mt-6 border-t border-gray-50 dark:border-gray-800 pt-6 space-y-4" onsubmit="submitNewBooking(event)">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-1.5 font-bold">Caregiver</label>
+                                <select id="booking-caregiver" required class="w-full px-4 py-3 text-xs rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-rose-600 outline-none transition-all dark:text-white">
+                                    <option value="Lisa Rodriguez">Lisa Rodriguez</option>
+                                    <option value="Sarah Mitchell">Sarah Mitchell</option>
+                                    <option value="Emma Johnson">Emma Johnson</option>
+                                    <option value="Maria Chen">Maria Chen</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-1.5 font-bold">Date</label>
+                                <input type="date" id="booking-date" required class="w-full px-4 py-3 text-xs rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-rose-600 outline-none transition-all dark:text-white">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-1.5 font-bold">Care Type</label>
+                                <select id="booking-type" required class="w-full px-4 py-3 text-xs rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-rose-600 outline-none transition-all dark:text-white">
+                                    <option value="Full Day">Full Day</option>
+                                    <option value="Trial Visit">Trial Visit</option>
+                                    <option value="After-School">After-School</option>
+                                    <option value="Overnight Support">Overnight Support</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex justify-end gap-2">
+                            <button type="button" onclick="toggleBookingForm()" class="px-4 py-2 border-2 border-gray-200 dark:border-gray-800 rounded-xl text-xs font-black uppercase tracking-widest transition-all dark:text-white">Cancel</button>
+                            <button type="submit" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-xl text-xs font-black uppercase tracking-widest transition-all">Submit Booking</button>
+                        </div>
+                    </form>
+                </div>
+
                 <div class="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden">
                     <div class="overflow-x-auto">
                         <table class="w-full text-sm">
@@ -301,26 +449,66 @@
             <!-- ===== MESSAGES ===== -->
             <div id="section-messages" class="dashboard-section">
                 <div class="mb-6"><h1 class="text-2xl font-black dark:text-white mb-2">Messages</h1><p class="text-sm text-gray-500 dark:text-gray-400">Communicate with your caregivers.</p></div>
-                <div class="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden">
-                    <div class="divide-y divide-gray-50 dark:divide-gray-800">
-                        <div class="flex items-center gap-4 p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer transition-colors">
-                            <div class="relative"><img src="assets/caregiver-lisa.png" class="w-12 h-12 rounded-xl object-cover"><span class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white dark:border-gray-900"></span></div>
-                            <div class="flex-1 min-w-0"><div class="flex justify-between items-center mb-1"><h4 class="font-bold dark:text-white text-sm">Lisa Rodriguez</h4><span class="text-[10px] text-gray-400">10:32 AM</span></div><p class="text-xs text-gray-500 truncate">The kids had a wonderful day today! We did finger painting and...</p></div>
-                            <span class="bg-rose-500 text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0">2</span>
+                <div class="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden grid grid-cols-1 lg:grid-cols-12 min-h-[500px]">
+                    <!-- Left column: Conversation list -->
+                    <div class="lg:col-span-5 border-r border-gray-100 dark:border-gray-800 flex flex-col">
+                        <div class="divide-y divide-gray-50 dark:divide-gray-800 flex-1 overflow-y-auto" id="conversations-list">
+                            <div onclick="selectConversation('lisa')" id="conv-lisa" class="conv-item active flex items-center gap-4 p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer transition-colors">
+                                <div class="relative"><img src="assets/caregiver-lisa.png" class="w-12 h-12 rounded-xl object-cover"><span class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white dark:border-gray-900"></span></div>
+                                <div class="flex-1 min-w-0"><div class="flex justify-between items-center mb-1"><h4 class="font-bold dark:text-white text-sm">Lisa Rodriguez</h4><span class="text-[10px] text-gray-400" id="conv-time-lisa">10:32 AM</span></div><p class="text-xs text-gray-500 truncate" id="conv-preview-lisa">The kids had a wonderful day today! We did finger painting...</p></div>
+                                <span class="badge-unread bg-rose-500 text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" id="conv-unread-lisa">2</span>
+                            </div>
+                            <div onclick="selectConversation('sarah')" id="conv-sarah" class="conv-item flex items-center gap-4 p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer transition-colors">
+                                <div class="relative"><img src="assets/caregiver-sarah.png" class="w-12 h-12 rounded-xl object-cover"><span class="absolute -top-1 -right-1 w-3 h-3 bg-gray-300 rounded-full border-2 border-white dark:border-gray-900"></span></div>
+                                <div class="flex-1 min-w-0"><div class="flex justify-between items-center mb-1"><h4 class="font-bold dark:text-white text-sm">Sarah Mitchell</h4><span class="text-[10px] text-gray-400" id="conv-time-sarah">Yesterday</span></div><p class="text-xs text-gray-500 truncate" id="conv-preview-sarah">Looking forward to the trial visit on Thursday! I have...</p></div>
+                                <span class="badge-unread bg-rose-500 text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" id="conv-unread-sarah">1</span>
+                            </div>
+                            <div onclick="selectConversation('emma')" id="conv-emma" class="conv-item flex items-center gap-4 p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer transition-colors">
+                                <div class="relative"><img src="assets/caregiver-emma.png" class="w-12 h-12 rounded-xl object-cover"><span class="absolute -top-1 -right-1 w-3 h-3 bg-gray-300 rounded-full border-2 border-white dark:border-gray-900"></span></div>
+                                <div class="flex-1 min-w-0"><div class="flex justify-between items-center mb-1"><h4 class="font-bold dark:text-white text-sm">Emma Johnson</h4><span class="text-[10px] text-gray-400" id="conv-time-emma">Jun 18</span></div><p class="text-xs text-gray-500 truncate" id="conv-preview-emma">Thank you for the feedback! I really enjoyed spending...</p></div>
+                            </div>
+                            <div onclick="selectConversation('support')" id="conv-support" class="conv-item flex items-center gap-4 p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer transition-colors">
+                                <div class="relative"><img src="assets/logo.png" class="w-12 h-12 rounded-xl object-cover bg-rose-50"><span class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white dark:border-gray-900"></span></div>
+                                <div class="flex-1 min-w-0"><div class="flex justify-between items-center mb-1"><h4 class="font-bold dark:text-white text-sm">TenderCare Support</h4><span class="text-[10px] text-gray-400" id="conv-time-support">Jun 15</span></div><p class="text-xs text-gray-500 truncate" id="conv-preview-support">Welcome to TenderCare! We're glad to have you. Here...</p></div>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-4 p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer transition-colors">
-                            <div class="relative"><img src="assets/caregiver-sarah.png" class="w-12 h-12 rounded-xl object-cover"><span class="absolute -top-1 -right-1 w-3 h-3 bg-gray-300 rounded-full border-2 border-white dark:border-gray-900"></span></div>
-                            <div class="flex-1 min-w-0"><div class="flex justify-between items-center mb-1"><h4 class="font-bold dark:text-white text-sm">Sarah Mitchell</h4><span class="text-[10px] text-gray-400">Yesterday</span></div><p class="text-xs text-gray-500 truncate">Looking forward to the trial visit on Thursday! I have some questions about...</p></div>
-                            <span class="bg-rose-500 text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0">1</span>
+                    </div>
+
+                    <!-- Right column: Chat box -->
+                    <div class="lg:col-span-7 flex flex-col justify-between h-[500px]" id="chat-window">
+                        <!-- Chat Header -->
+                        <div class="p-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between bg-gray-50/50 dark:bg-gray-800/20">
+                            <div class="flex items-center gap-3">
+                                <img src="assets/caregiver-lisa.png" id="chat-active-img" class="w-10 h-10 rounded-xl object-cover">
+                                <div>
+                                    <h4 class="font-bold dark:text-white text-sm" id="chat-active-name">Lisa Rodriguez</h4>
+                                    <span class="text-[10px] text-green-500 flex items-center gap-1 font-bold uppercase tracking-wider" id="chat-active-status"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-ping"></span> Active Now</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-4 p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer transition-colors">
-                            <div class="relative"><img src="assets/caregiver-emma.png" class="w-12 h-12 rounded-xl object-cover"><span class="absolute -top-1 -right-1 w-3 h-3 bg-gray-300 rounded-full border-2 border-white dark:border-gray-900"></span></div>
-                            <div class="flex-1 min-w-0"><div class="flex justify-between items-center mb-1"><h4 class="font-bold dark:text-white text-sm">Emma Johnson</h4><span class="text-[10px] text-gray-400">Jun 18</span></div><p class="text-xs text-gray-500 truncate">Thank you for the feedback! I really enjoyed spending time with your children.</p></div>
+
+                        <!-- Chat Messages List -->
+                        <div class="flex-1 p-6 overflow-y-auto space-y-4 flex flex-col" id="chat-messages-container">
+                            <!-- Loaded via JS -->
                         </div>
-                        <div class="flex items-center gap-4 p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer transition-colors">
-                            <div class="relative"><img src="assets/caregiver-profile.png" class="w-12 h-12 rounded-xl object-cover"><span class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white dark:border-gray-900"></span></div>
-                            <div class="flex-1 min-w-0"><div class="flex justify-between items-center mb-1"><h4 class="font-bold dark:text-white text-sm">TenderCare Support</h4><span class="text-[10px] text-gray-400">Jun 15</span></div><p class="text-xs text-gray-500 truncate">Welcome to TenderCare! We're glad to have you. Here are some tips to get started...</p></div>
+
+                        <!-- Typing Indicator -->
+                        <div class="px-6 py-2 hidden" id="chat-typing-indicator">
+                            <div class="flex items-center gap-2 text-xs text-gray-400">
+                                <span id="typing-name" class="font-bold">Lisa</span> is typing
+                                <span class="flex gap-1">
+                                    <span class="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"></span>
+                                    <span class="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce [animation-delay:0.2s]"></span>
+                                    <span class="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce [animation-delay:0.4s]"></span>
+                                </span>
+                            </div>
                         </div>
+
+                        <!-- Chat Input -->
+                        <form onsubmit="sendChatMessage(event)" class="p-4 border-t border-gray-100 dark:border-gray-800 flex gap-2">
+                            <input type="text" id="chat-message-input" required placeholder="Type a message..." class="flex-1 px-4 py-3 text-xs bg-gray-50 dark:bg-gray-850 border border-gray-200 dark:border-gray-700 rounded-xl outline-none focus:border-rose-600 transition-all dark:text-white">
+                            <button type="submit" class="bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold px-5 py-3 rounded-xl transition-all uppercase tracking-wider"><i class="fas fa-paper-plane"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -335,7 +523,7 @@
                             <img src="assets/caregiver-lisa.png" alt="Lisa Rodriguez" class="w-14 h-14 rounded-xl object-cover">
                             <div><h4 class="font-bold dark:text-white">Lisa Rodriguez</h4><p class="text-[10px] text-gray-400">12 yrs exp • Specialist</p><div class="flex gap-1 mt-1"><i class="fas fa-star text-amber-400 text-[10px]"></i><span class="text-[10px] font-bold text-gray-500">4.9</span></div></div>
                         </div>
-                        <button class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
+                        <button onclick="openProfileModal('Lisa Rodriguez')" class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
                     </div>
                     <div class="bg-white dark:bg-gray-900 rounded-2xl p-5 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-all relative">
                         <button class="absolute top-4 right-4 text-rose-500 hover:text-rose-600"><i class="fas fa-heart"></i></button>
@@ -343,7 +531,7 @@
                             <img src="assets/caregiver-profile.png" alt="Maria Chen" class="w-14 h-14 rounded-xl object-cover">
                             <div><h4 class="font-bold dark:text-white">Maria Chen</h4><p class="text-[10px] text-gray-400">7 yrs exp • Full-Time</p><div class="flex gap-1 mt-1"><i class="fas fa-star text-amber-400 text-[10px]"></i><span class="text-[10px] font-bold text-gray-500">5.0</span></div></div>
                         </div>
-                        <button class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
+                        <button onclick="openProfileModal('Maria Chen')" class="w-full bg-rose-600 hover:bg-rose-700 text-white py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all">Book Trial</button>
                     </div>
                 </div>
             </div>
@@ -392,20 +580,180 @@
 <!-- Sidebar Overlay -->
 <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden" onclick="toggleSidebar()"></div>
 
+<!-- Profile Detail Modal -->
+<div id="profile-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center hidden p-4 backdrop-blur-sm">
+    <div class="bg-white dark:bg-gray-900 rounded-[2rem] border border-gray-150 dark:border-gray-800 p-6 md:p-8 max-w-lg w-full shadow-2xl relative transition-all duration-300 scale-95 opacity-0 text-left" id="profile-modal-content">
+        <button onclick="closeProfileModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 dark:hover:text-white w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center transition-all" aria-label="Close modal"><i class="fas fa-times"></i></button>
+        <div class="flex items-start gap-4 mb-6">
+            <img id="modal-img" src="" class="w-20 h-20 rounded-2xl object-cover border border-gray-200 dark:border-gray-800">
+            <div>
+                <span class="badge-verified text-[10px] font-bold px-2 py-0.5 rounded-full inline-block mb-1.5">✓ Vetted Caregiver</span>
+                <h3 class="text-xl font-black dark:text-white" id="modal-name">Sarah Mitchell</h3>
+                <p class="text-xs text-gray-400 mt-0.5" id="modal-role">8 yrs exp • Full-Time Nanny</p>
+            </div>
+        </div>
+        
+        <div class="space-y-4">
+            <div>
+                <h4 class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1.5 font-bold">Bio & Care Philosophy</h4>
+                <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed font-medium" id="modal-bio"></p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 bg-gray-50 dark:bg-gray-800/40 p-4 rounded-xl">
+                <div>
+                    <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Availability</span>
+                    <span class="text-xs font-bold dark:text-white block mt-0.5" id="modal-availability">Mon - Fri, 8am - 6pm</span>
+                </div>
+                <div>
+                    <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Hourly Rate</span>
+                    <span class="text-xs font-bold dark:text-white block mt-0.5" id="modal-rate">$28 - $32 / hr</span>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 font-bold">Verification Checklist</h4>
+                <div class="grid grid-cols-2 gap-2 text-[11px] font-bold">
+                    <div class="flex items-center gap-2 text-green-600"><i class="fas fa-check-circle"></i> Identity Checked</div>
+                    <div class="flex items-center gap-2 text-green-600"><i class="fas fa-check-circle"></i> Criminal Check Passed</div>
+                    <div class="flex items-center gap-2 text-green-600"><i class="fas fa-check-circle"></i> References Contacted</div>
+                    <div class="flex items-center gap-2 text-green-600"><i class="fas fa-check-circle"></i> CPR/First Aid Cert</div>
+                </div>
+            </div>
+            <button onclick="bookDirectFromModal()" class="w-full bg-rose-600 hover:bg-rose-700 text-white py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all mt-4">Select & Book This Caregiver</button>
+        </div>
+    </div>
+</div>
+
 <script src="components.js"></script>
 <script>
+// --- Caregivers Data ---
+const caregiverProfiles = {
+    'Sarah Mitchell': {
+        name: 'Sarah Mitchell',
+        role: '8 yrs exp • Full-Time Nanny',
+        img: 'assets/caregiver-sarah.png',
+        availability: 'Mon - Fri, 8am - 6pm',
+        rate: '$28 - $30 / hr',
+        bio: 'Sarah has over 8 years of experience working with infants and toddlers. She holds a degree in Early Childhood Education and specializes in play-based learning and sleep training.'
+    },
+    'Emma Johnson': {
+        name: 'Emma Johnson',
+        role: '5 yrs exp • Part-Time Care',
+        img: 'assets/caregiver-emma.png',
+        availability: 'Mon/Wed/Fri, 1pm - 7pm',
+        rate: '$25 - $28 / hr',
+        bio: 'Emma is a creative and energetic caregiver who loves arts, crafts, and outdoor play. She is certified in CPR and First Aid and is great with school-aged children.'
+    },
+    'Lisa Rodriguez': {
+        name: 'Lisa Rodriguez',
+        role: '12 yrs exp • Specialist',
+        img: 'assets/caregiver-lisa.png',
+        availability: 'Mon - Thu, 9am - 5pm',
+        rate: '$32 - $35 / hr',
+        bio: 'Lisa is a registered newborn care specialist with 12+ years of experience. She provides support for new mothers, overnight care, and specializes in sleep schedules and bottle weaning.'
+    },
+    'Maria Chen': {
+        name: 'Maria Chen',
+        role: '7 yrs exp • Full-Time',
+        img: 'assets/caregiver-profile.png',
+        availability: 'Tue - Sat, 8am - 5pm',
+        rate: '$26 - $29 / hr',
+        bio: 'Maria has been working with local Brooklyn families for 7 years. She is bilingual in English and Mandarin, loves preparing healthy meals, and is a certified swim instructor.'
+    }
+};
+
+// --- Conversations Data ---
+const activeConversationData = {
+    'lisa': {
+        name: 'Lisa Rodriguez',
+        img: 'assets/caregiver-lisa.png',
+        status: 'Active Now',
+        messages: [
+            { sender: 'reply', text: 'Good morning Sarah! The kids and I had a great walk in the park today.', time: '09:15 AM' },
+            { sender: 'user', text: 'Awesome! Did they finish their lunch?', time: '09:30 AM' },
+            { sender: 'reply', text: 'Yes, they ate all the fruit and half the sandwich. We are doing finger painting now.', time: '10:32 AM' }
+        ],
+        replies: [
+            "Finger painting went great! They are taking a nap now.",
+            "They are playing with the blocks and having a lot of fun.",
+            "Yes, I will prepare the afternoon snack shortly.",
+            "All tasks for today are completed! See you soon."
+        ],
+        replyDelay: 1500
+    },
+    'sarah': {
+        name: 'Sarah Mitchell',
+        img: 'assets/caregiver-sarah.png',
+        status: 'Away',
+        messages: [
+            { sender: 'user', text: 'Hi Sarah, are you available for a trial visit this Thursday?', time: 'Yesterday' },
+            { sender: 'reply', text: 'Looking forward to the trial visit on Thursday! I have some questions about...', time: 'Yesterday' }
+        ],
+        replies: [
+            "Yes, Thursday at 2:00 PM works perfectly for me!",
+            "I have downloaded the family handbook, looking forward to meeting you.",
+            "Should I prepare any specific games for the kids?",
+            "Let me know if there are any parking instructions!"
+        ],
+        replyDelay: 2000
+    },
+    'emma': {
+        name: 'Emma Johnson',
+        img: 'assets/caregiver-emma.png',
+        status: 'Active Now',
+        messages: [
+            { sender: 'user', text: 'Thank you for helping out last week, Emma!', time: 'Jun 18' },
+            { sender: 'reply', text: 'Thank you for the feedback! I really enjoyed spending time with your children.', time: 'Jun 18' }
+        ],
+        replies: [
+            "It was my pleasure! Let me know if you need help next week.",
+            "Always happy to help Sarah!",
+            "I had a great time too. The kids are wonderful!"
+        ],
+        replyDelay: 1000
+    },
+    'support': {
+        name: 'TenderCare Support',
+        img: 'assets/logo.png',
+        status: 'Active Now',
+        messages: [
+            { sender: 'reply', text: "Welcome to TenderCare! We're glad to have you. Here are some tips to get started.", time: 'Jun 15' }
+        ],
+        replies: [
+            "Thank you for contacting TenderCare support. How can we help you today?",
+            "Your background check tracking is active. Let us know if you need anything else.",
+            "We have received your booking inquiry and will update you shortly!"
+        ],
+        replyDelay: 1200
+    }
+};
+
+let currentChat = 'lisa';
+
 // Section switching
 function switchSection(name) {
     document.querySelectorAll('.dashboard-section').forEach(s => s.classList.remove('active'));
-    document.querySelectorAll('.nav-item').forEach(n => { n.classList.remove('active'); n.classList.add('text-gray-600','dark:text-gray-400'); });
+    document.querySelectorAll('.nav-item').forEach(n => {
+        n.classList.remove('active');
+        n.classList.add('text-gray-600','dark:text-gray-400');
+    });
     
     const section = document.getElementById('section-' + name);
     if (section) section.classList.add('active');
     
     const navBtn = document.querySelector(`[data-section="${name}"]`);
-    if (navBtn) { navBtn.classList.add('active'); navBtn.classList.remove('text-gray-600','dark:text-gray-400'); }
+    if (navBtn) {
+        navBtn.classList.add('active');
+        navBtn.classList.remove('text-gray-600','dark:text-gray-400');
+    }
     
-    const titles = { overview:'Family Dashboard', caregivers:'Browse Caregivers', bookings:'My Bookings', background:'Background Checks', messages:'Messages', favorites:'Favorites', settings:'Settings' };
+    const titles = {
+        overview: 'Family Dashboard',
+        caregivers: 'Browse Caregivers',
+        bookings: 'My Bookings',
+        background: 'Background Checks',
+        messages: 'Messages',
+        favorites: 'Favorites',
+        settings: 'Settings'
+    };
     document.getElementById('page-title').textContent = titles[name] || 'Dashboard';
     
     // Close mobile sidebar
@@ -419,7 +767,232 @@ function toggleSidebar() {
     sidebar.classList.toggle('-translate-x-full');
     overlay.classList.toggle('hidden');
 }
+
+// --- Daily Care Checklist Progress ---
+function updateChecklistProgress() {
+    const checkboxes = document.querySelectorAll('#checklist-container input[type="checkbox"]');
+    const checked = document.querySelectorAll('#checklist-container input[type="checkbox"]:checked');
+    const progressSpan = document.getElementById('checklist-progress');
+    if (progressSpan && checkboxes.length > 0) {
+        progressSpan.textContent = `${checked.length} / ${checkboxes.length} Done`;
+    }
+}
+
+function addChecklistTask() {
+    const input = document.getElementById('new-task-input');
+    const text = input.value.trim();
+    if (!text) return;
+    
+    const container = document.getElementById('checklist-container');
+    if (container) {
+        const label = document.createElement('label');
+        label.className = 'flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/20 rounded-xl cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800/40 transition-colors';
+        label.innerHTML = `
+            <input type="checkbox" onchange="updateChecklistProgress()" class="w-4 h-4 text-rose-600 rounded focus:ring-rose-500">
+            <span class="text-xs font-medium dark:text-gray-200">${text}</span>
+        `;
+        container.appendChild(label);
+        input.value = '';
+        updateChecklistProgress();
+    }
+}
+
+// --- Bookings Form Toggle & Submit ---
+function toggleBookingForm() {
+    const form = document.getElementById('booking-form');
+    const arrow = document.getElementById('booking-form-arrow');
+    if (form && arrow) {
+        const isHidden = form.classList.toggle('hidden');
+        arrow.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+}
+
+function submitNewBooking(e) {
+    e.preventDefault();
+    const caregiver = document.getElementById('booking-caregiver').value;
+    const dateVal = document.getElementById('booking-date').value;
+    const type = document.getElementById('booking-type').value;
+    
+    if (!dateVal) return;
+    
+    // Format Date (e.g. Jun 25, 2026)
+    const dObj = new Date(dateVal);
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const formattedDate = `${months[dObj.getMonth()]} ${dObj.getDate() + 1}, ${dObj.getFullYear()}`;
+    
+    const imgMap = {
+        'Lisa Rodriguez': 'assets/caregiver-lisa.png',
+        'Sarah Mitchell': 'assets/caregiver-sarah.png',
+        'Emma Johnson': 'assets/caregiver-emma.png',
+        'Maria Chen': 'assets/caregiver-profile.png'
+    };
+    
+    const tbody = document.querySelector('#section-bookings tbody');
+    const tr = document.createElement('tr');
+    tr.className = 'hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors border-b border-gray-50 dark:border-gray-800';
+    tr.innerHTML = `
+        <td class="px-6 py-4"><div class="flex items-center gap-3"><img src="${imgMap[caregiver] || 'assets/logo.png'}" class="w-8 h-8 rounded-lg object-cover"><span class="font-bold dark:text-white">${caregiver}</span></div></td>
+        <td class="px-6 py-4 text-gray-500">${formattedDate}</td>
+        <td class="px-6 py-4 text-gray-500">9:00 AM - 5:00 PM</td>
+        <td class="px-6 py-4 text-gray-500">${type}</td>
+        <td class="px-6 py-4"><span class="badge-pending text-[10px] font-bold px-3 py-1 rounded-full">Pending</span></td>
+        <td class="px-6 py-4"><button class="text-rose-600 hover:underline text-xs font-bold">Cancel</button></td>
+    `;
+    
+    tbody.insertBefore(tr, tbody.firstChild);
+    e.target.reset();
+    toggleBookingForm();
+}
+
+// --- Messenger Logic ---
+function renderChatBubbles() {
+    const container = document.getElementById('chat-messages-container');
+    const data = activeConversationData[currentChat];
+    if (!container || !data) return;
+    
+    container.innerHTML = '';
+    data.messages.forEach(msg => {
+        const isUser = msg.sender === 'user';
+        const bubble = document.createElement('div');
+        bubble.className = `max-w-[70%] rounded-2xl p-4 text-xs leading-relaxed ${isUser ? 'bg-rose-650 text-white self-end rounded-tr-none' : 'bg-gray-50 dark:bg-gray-800 dark:text-gray-200 self-start rounded-tl-none border border-gray-150/15 dark:border-gray-800'}`;
+        bubble.innerHTML = `<p>${msg.text}</p><span class="block text-[9px] mt-1.5 opacity-60 text-right font-bold font-mono">${msg.time}</span>`;
+        container.appendChild(bubble);
+    });
+    
+    container.scrollTop = container.scrollHeight;
+}
+
+function selectConversation(id) {
+    currentChat = id;
+    
+    document.querySelectorAll('.conv-item').forEach(item => item.classList.remove('active'));
+    document.getElementById('conv-' + id).classList.add('active');
+    
+    const badge = document.getElementById('conv-unread-' + id);
+    if (badge) badge.classList.add('hidden');
+    
+    const data = activeConversationData[id];
+    document.getElementById('chat-active-img').src = data.img;
+    document.getElementById('chat-active-name').textContent = data.name;
+    
+    const statusSpan = document.getElementById('chat-active-status');
+    if (data.status === 'Active Now') {
+        statusSpan.className = 'text-[10px] text-green-500 flex items-center gap-1 font-bold uppercase tracking-wider';
+        statusSpan.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-ping"></span> Active Now';
+    } else {
+        statusSpan.className = 'text-[10px] text-gray-400 flex items-center gap-1 font-bold uppercase tracking-wider';
+        statusSpan.textContent = data.status;
+    }
+    
+    renderChatBubbles();
+}
+
+function sendChatMessage(e) {
+    e.preventDefault();
+    const input = document.getElementById('chat-message-input');
+    const text = input.value.trim();
+    if (!text) return;
+    
+    const data = activeConversationData[currentChat];
+    const timeNow = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    
+    data.messages.push({ sender: 'user', text, time: timeNow });
+    renderChatBubbles();
+    input.value = '';
+    
+    const preview = document.getElementById('conv-preview-' + currentChat);
+    const time = document.getElementById('conv-time-' + currentChat);
+    if (preview) preview.textContent = text;
+    if (time) time.textContent = timeNow;
+    
+    triggerCaregiverReply(data);
+}
+
+function triggerCaregiverReply(data) {
+    const typingIndicator = document.getElementById('chat-typing-indicator');
+    const typingName = document.getElementById('typing-name');
+    
+    if (typingIndicator && typingName) {
+        typingName.textContent = data.name.split(' ')[0];
+        typingIndicator.classList.remove('hidden');
+        document.getElementById('chat-messages-container').scrollTop = document.getElementById('chat-messages-container').scrollHeight;
+    }
+    
+    setTimeout(() => {
+        if (typingIndicator) typingIndicator.classList.add('hidden');
+        
+        const replyText = data.replies.length > 0 ? data.replies[Math.floor(Math.random() * data.replies.length)] : "Got it, thank you!";
+        const timeNow = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        
+        data.messages.push({ sender: 'reply', text: replyText, time: timeNow });
+        renderChatBubbles();
+        
+        const preview = document.getElementById('conv-preview-' + currentChat);
+        const time = document.getElementById('conv-time-' + currentChat);
+        if (preview) preview.textContent = replyText;
+        if (time) time.textContent = timeNow;
+    }, data.replyDelay);
+}
+
+// --- Profile Modal Logic ---
+function openProfileModal(name) {
+    const profile = caregiverProfiles[name];
+    if (!profile) return;
+    
+    document.getElementById('modal-img').src = profile.img;
+    document.getElementById('modal-name').textContent = profile.name;
+    document.getElementById('modal-role').textContent = profile.role;
+    document.getElementById('modal-availability').textContent = profile.availability;
+    document.getElementById('modal-rate').textContent = profile.rate;
+    document.getElementById('modal-bio').textContent = profile.bio;
+    
+    const modal = document.getElementById('profile-modal');
+    const content = document.getElementById('profile-modal-content');
+    
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+        content.classList.remove('scale-95', 'opacity-0');
+        content.classList.add('scale-100', 'opacity-100');
+    }, 10);
+}
+
+// Global toggle functions
+window.openProfileModal = openProfileModal;
+
+function closeProfileModal() {
+    const modal = document.getElementById('profile-modal');
+    const content = document.getElementById('profile-modal-content');
+    
+    content.classList.remove('scale-100', 'opacity-100');
+    content.classList.add('scale-95', 'opacity-0');
+    
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 250);
+}
+
+function bookDirectFromModal() {
+    const name = document.getElementById('modal-name').textContent;
+    closeProfileModal();
+    
+    const select = document.getElementById('booking-caregiver');
+    if (select) {
+        select.value = name;
+    }
+    
+    switchSection('bookings');
+    
+    const form = document.getElementById('booking-form');
+    if (form && form.classList.contains('hidden')) {
+        toggleBookingForm();
+    }
+}
+
+// On load initialization
+document.addEventListener('DOMContentLoaded', () => {
+    updateChecklistProgress();
+    selectConversation('lisa');
+});
 </script>
 </body>
 </html>
-
