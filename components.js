@@ -21,10 +21,10 @@
     ];
 
     const SOCIAL_LINKS = [
-        { icon: 'fab fa-facebook-f', href: '#', hoverColor: 'hover:text-blue-600' },
+        { icon: 'fab fa-facebook-f', href: '#', hoverColor: 'hover:text-rose-600' },
         { icon: 'fab fa-instagram', href: '#', hoverColor: 'hover:text-pink-500' },
         { icon: 'fab fa-twitter', href: '#', hoverColor: 'hover:text-sky-400' },
-        { icon: 'fab fa-linkedin-in', href: '#', hoverColor: 'hover:text-blue-700' },
+        { icon: 'fab fa-linkedin-in', href: '#', hoverColor: 'hover:text-rose-700' },
     ];
 
     // --- Get current page ---
